@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <style>
+        .lista-imagenes {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .lista-imagenes li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .lista-imagenes li::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url('https://s.france24.com/media/display/aaba9338-3d9f-11f0-b96c-005056a97e36/w:1280/p:16x9/000_48NV362.jpg');
+            background-size: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .lista-imagenes li:nth-child(2)::before {
+            background-image: url('https://img2.rtve.es/n/16791842?w=1600');
+        }
+
+        .lista-imagenes li:nth-child(3)::before {
+            background-image: url('https://franmt7.com/wp-content/uploads/2021/03/taylor-swift-03.jpg?w=1000');
+        }
+
+        .lista-imagenes li:nth-child(4)::before {
+            background-image: url('https://www.famousbirthdays.com/faces/swift-taylor-image.jpg');
+        }
+
+        .lista-imagenes li:nth-child(5)::before {
+            background-image: url('https://statics.forbesargentina.com/2025/10/crop/68e02c01184a5__600x390.webp');
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="lista-imagenes">
+        <li>Taylor The Eras Tour</li>
+        <li>Taylor Evento</li>
+        <li>Taylor Bebé</li>
+        <li>Taylor</li>
+        <li>Taylor The Eras Tour</li>
+    </ul>
+
+</body>
+</html>
