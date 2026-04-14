@@ -1,13 +1,171 @@
 :root{
+    --colorPpal: rgb(173, 12, 93);
+    --colorSec: rgb(83, 160, 204);
+    --titulos: 'Bebas Neue';
+    --subtitulos: 'Inter', italic;
+    --texto: 'Inter', normal;
+}
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body{
-    background-image: url(imgs/fondo.jpg);
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding-top: 65px;
 }
 
 #navBar{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPpal);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.itemNB{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    display: inline;
+}
+
+.itemNB a {
+    font-family: var(--titulos);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.itemNB-logo img{
+    width: 55px;
+    height: 55px;
+    padding-top: 2px;
+}
+
+.hero{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondoEsp{
+    background-image: url(imgs/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.textoMoviendose{
+    display: inline-flex;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.textoMoviendose h1{
+    font-family: var(--titulos);
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.fotoIntegrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoIntegrantes img{
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fotoIntegrantes1, .fotoIntegrantes2{
+    display: inline-flex;
+}
+
+.infoBanda{
+    align-items: center;
+    text-align: center;
+    background-color: var(--colorSec);
+    padding: 30px 40px;
+}
+
+.infoBanda h2{
+    font-family: var(--titulos);
+    color: var(--colorPpal);
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0px 0px 8px 0px;
+}
+
+.infoBanda p{
+    font-family: var(--texto);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 5px;
+    line-height: 1.6;
+}
+
+footer{
+    background-color: var(--colorPpal);
+    text-align: center;
+    padding: 15px;
+}
+
+footer p{
+    font-family: var(--texto);
+    color: white;
+    font-size: 13px;
+    margin: 0px 0px 8px 0px;
+}
+
+.contRedes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contRedes a{
+    color: white;
+    font-size: 22px;
+}
+
+@media (min-width: 740px) {
+
+    .itemNB a{
+        font-size: 30px;
+    }
+
+    .itemNB-logo img{
+        width: 80px;
+        height: 80px;
+    padding-top: 3px;
+    }
+
+    .navBar{
+        padding:5px;
+    }
 }

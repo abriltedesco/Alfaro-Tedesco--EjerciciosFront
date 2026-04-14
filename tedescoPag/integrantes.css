@@ -1,0 +1,139 @@
+:root{
+    --colorPpal: rgb(173, 12, 93);
+    --colorSec: rgb(83, 160, 204);
+    --titulos: 'Bebas Neue';
+    --subtitulos: 'Inter', italic;
+    --texto: 'Inter', normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-image: url(imgs/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPpal);
+    width: 100%;
+    height: 65px;
+}
+
+.itemNB{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    display: inline;
+}
+
+.itemNB a {
+    font-family: var(--titulos);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.itemNB-logo img{
+    width: 55px;
+    height: 55px;
+    padding-top: 2px;
+}
+
+.seccionIntegrante{
+    padding: 20px;
+    margin: 15px;
+}
+
+.seccionIntegrante img{
+    align-items: center;
+    width: 100%;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.info{
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.info h2{
+    font-family: var(--titulos);
+    font-size: 40px;
+    margin: 0px;
+}
+
+.info h3{
+    font-family: var(--subtitulos);
+        font-style: italic;
+    margin:0px;
+}
+
+.infoDer h3, .infoDer h2, .infoDer p{
+    text-align: left;
+}
+
+.infoIzq h3, .infoIzq h2, .infoIzq p{
+    text-align: right;
+}
+
+p{
+    font-family: var(--texto);
+    margin: 0px;
+}
+
+@media (min-width: 740px) {
+
+    .itemNB a{
+        font-size: 30px;
+    }
+
+    .itemNB-logo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .seccionIntegrante{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .seccionIntegrante img{
+        width: 45%;
+        max-height: 400px;
+        object-fit: cover;
+        margin: 10px;
+    }
+
+    .seccionIntegrante .info{
+        width: 55%;
+    }
+}
