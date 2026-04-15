@@ -46,9 +46,13 @@ body{
     color: rgb(0, 0, 0);
 }
 
+.itemNB-logo{
+    margin: 5px 18px;
+}
+
 .itemNB-logo img{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     padding-top: 2px;
 }
 
@@ -89,10 +93,8 @@ body{
 }
 
 .fotoIntegrantes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .fotoIntegrantes img{
@@ -102,8 +104,13 @@ body{
     margin-bottom: 10px;
 }
 
+.fotoIntegrantes img:hover{
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
+
 .fotoIntegrantes1, .fotoIntegrantes2{
-    display: inline-flex;
+    display: contents;
 }
 
 .infoBanda{
@@ -129,6 +136,12 @@ body{
     line-height: 1.6;
 }
 
+.gifRobado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 footer{
     background-color: var(--colorPpal);
     text-align: center;
@@ -145,11 +158,14 @@ footer p{
 .contRedes{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    background-color: var(--colorSec);
+    height: 45px;
 }
 
 .contRedes a{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 22px;
 }
 
@@ -160,12 +176,38 @@ footer p{
     }
 
     .itemNB-logo img{
-        width: 80px;
-        height: 80px;
-    padding-top: 3px;
+        width: 70px;
+        height:62px;
+      padding-top: 3px;
     }
 
     .navBar{
         padding:5px;
+    }
+
+    .fotoIntegrantes{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        padding: 20px 8px;
+        box-sizing: border-box;
+    }
+
+    .fotoIntegrantes img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .infoBanda p{
+        font-size: 20px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    .contRedes a{
+    color: white;
+    font-size: 30px;
     }
 }

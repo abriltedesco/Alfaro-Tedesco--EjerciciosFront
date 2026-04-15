@@ -1,0 +1,242 @@
+:root{
+    --colorPpal: rgb(173, 12, 93);
+    --colorSec: rgb(83, 160, 204);
+    --titulos: 'Bebas Neue';
+    --subtitulos: 'Inter', italic;
+    --texto: 'Inter', normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding-top: 65px;
+}
+
+#navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPpal);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.itemNB{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    display: inline;
+}
+
+.itemNB a {
+    font-family: var(--titulos);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.itemNB-logo{
+    margin: 5px 18px;
+}
+
+.itemNB-logo img{
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-image: url(imgs/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: var(--colorPpal);
+    text-align: center;
+    padding: 15px;
+}
+
+footer p{
+    font-family: var(--texto);
+    color: white;
+    font-size: 13px;
+    margin: 0px 0px 8px 0px;
+}
+
+.contRedes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contRedes a{
+    color: white;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.albumes5sos h1, .albumesIndiv h1{
+    font-family: var(--titulos);
+    color:black;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+    margin: 0;
+    text-shadow:var(--colorPpal) 1px 1px 2px;
+}
+
+.integrante{
+    margin-bottom: 10px;
+}
+
+.integrante h2{
+    font-family: var(--titulos);
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: normal;
+    padding: 15px 15px 0 15px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+.contAlbumes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px 15px;
+}
+
+.album{
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.album img{
+    width: 100%;
+    height: auto;
+}
+
+.infoAlbum{
+    padding: 10px 12px;
+}
+
+.infoAlbum h2{
+    font-family: var(--titulos);
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+    padding:0px;
+}
+
+.anio{
+    font-family: var(--subtitulos);
+    font-style: italic;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 8px 0;
+}
+
+
+.contRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--colorSec);
+    height: 45px;
+}
+
+.contRedes a{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.linksMusica{
+    justify-content: flex-end;
+    display: flex;
+    gap: 12px;
+}
+
+.linksMusica a{
+    color: white;
+    font-size: 20px;
+}
+
+
+@media (min-width: 740px) {
+
+    .itemNB a{
+        font-size: 30px;
+    }
+
+    .itemNB-logo img{
+        width: 70px;
+        height:62px;
+      padding-top: 3px;
+    }
+
+    .navBar{
+        padding:5px;
+    }
+
+    .infoBanda p{
+        font-size: 20px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    .contRedes a{
+    color: white;
+    font-size: 30px;
+    }
+
+    .contAlbumes{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        padding: 15px 30px;
+    }
+
+    .albumes5sos h1, .albumesIndiv h1{
+        font-size: 44px;
+    }
+
+    .integrante h2{
+        font-size: 32px;
+        padding: 20px 30px 0 30px;
+    }
+
+    .infoAlbum h2{
+        font-size: 24px;
+        padding: 0px;
+    }
+
+    .anio{
+        font-size: 15px;
+    }
+
+    .linksMusica a{
+        font-size: 24px;
+    }
+}

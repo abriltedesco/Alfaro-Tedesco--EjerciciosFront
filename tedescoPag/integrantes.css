@@ -109,6 +109,34 @@ p{
     margin: 0px;
 }
 
+
+.contRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--colorSec);
+    height: 45px;
+}
+
+.contRedes a{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+footer{
+    background-color: var(--colorPpal);
+    text-align: center;
+    padding: 15px;
+}
+
+footer p{
+    font-family: var(--texto);
+    color: white;
+    font-size: 13px;
+    margin: 0px 0px 8px 0px;
+}
+
 @media (min-width: 740px) {
 
     .itemNB a{
