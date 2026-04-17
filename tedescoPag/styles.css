@@ -18,6 +18,7 @@ body{
     width: 100%;
     margin: 0;
     padding-top: 65px;
+    overflow-x: hidden; 
 }
 
 #navBar{
@@ -31,6 +32,10 @@ body{
     top: 0;
     left: 0;
     z-index: 100;
+}
+
+img {
+    max-width: 100%;
 }
 
 .itemNB{
@@ -88,8 +93,6 @@ body{
 .hero img{
     width: 100%;
     height: auto;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 .fotoIntegrantes {
