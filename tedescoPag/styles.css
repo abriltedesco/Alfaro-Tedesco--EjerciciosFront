@@ -4,6 +4,7 @@
     --titulos: 'Bebas Neue';
     --subtitulos: 'Inter', italic;
     --texto: 'Inter', normal;
+    --imgFondo: url(imgs/fondo.jpg);
 }
 
 .bebas-neue-regular {
@@ -69,7 +70,7 @@ img {
 }
 
 .fondoEsp{
-    background-image: url(imgs/fondo.jpg);
+    background-image: var(--imgFondo);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
